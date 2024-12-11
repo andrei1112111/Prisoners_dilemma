@@ -6,7 +6,7 @@
 
 class EnviousMercifulStrategy final : public Strategy{
 public:
-    // Betray any way
+    // punishes betrayal but forgives cooperation
     EnviousMercifulStrategy();
     ~EnviousMercifulStrategy() final = default;
 

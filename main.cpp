@@ -26,12 +26,9 @@ int main(const int argc, const char *argv[]) {
 
     std::unique_ptr<Competition> competition;
 
-    std::array<StrategyEnum, 3> strategies_arr{strategies_vec[0], strategies_vec[1], strategies_vec[2]};
-
     int steps;
 
-
-    for (int i = 1; i < argc; i++) {
+    for (int i = 1; i < argc; ++i) {
         arguments.emplace_back(argv[i]);
     }
 
@@ -45,6 +42,8 @@ int main(const int argc, const char *argv[]) {
         std::cerr << "Failed to parse arguments: " << exc.what() << std::endl;
         return -1;
     }
+
+    std::array<StrategyEnum, 3> strategies_arr{strategies_vec[0], strategies_vec[1], strategies_vec[2]};
 
     switch (mode) {
         case Detailed:
