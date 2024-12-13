@@ -3,7 +3,7 @@
 #include <include/competitions/FastCompetition.h>
 
 #include <iostream>
-#include <utility>
+
 
 TournamentCompetition::TournamentCompetition(std::vector<StrategyEnum> strategies, ReferenceTable reference_table,
                                              int steps)
@@ -33,11 +33,6 @@ void TournamentCompetition::Simulation() {
                 total_scores_[strategy2] += competition.GetResults()[2];
             }
         }
-    }
-    for (int i = 0; i < strategies_.size(); ++i) {
-        auto pointer = StrategyFactory::factory(strategies_[i]);
-        std::cout << "Strategy " << pointer->GetName()
-                  << " gets " << total_scores_[i] << " points." << std::endl;
     }
     std::cin.get();
 }

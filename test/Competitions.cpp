@@ -50,8 +50,8 @@ TEST_F(TournamentCompetitionTest, TournamentSimulationWorks) {
     competition_->Simulation();
 
     std::string result = output.str();
-    EXPECT_NE(result.find("Стратегия"), std::string::npos);
-    EXPECT_NE(result.find("набирает"), std::string::npos);
+    EXPECT_NE(result.find("Strategy"), std::string::npos);
+    EXPECT_NE(result.find("gets"), std::string::npos);
 
     std::cout.rdbuf(old_cout);
     std::cin.rdbuf(old_cin);
@@ -109,7 +109,7 @@ TEST_F(DetailedCompetitionTest, DetailedCompetitionSimulationWorks) {
 
     std::string result = output.str();
     EXPECT_NE(result.find("Раунд"), std::string::npos);
-    EXPECT_NE(result.find("сотрудничетает."), std::string::npos);
+    EXPECT_NE(result.find("cooperated."), std::string::npos);
 
     std::cout.rdbuf(old_cout);
     std::cin.rdbuf(old_cin);
