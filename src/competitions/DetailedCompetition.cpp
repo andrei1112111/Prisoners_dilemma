@@ -4,7 +4,7 @@
 #include <include/competitions/DetailedCompetition.h>
 
 
-DetailedCompetition::DetailedCompetition(const std::array<StrategyEnum, 3> &strategies, ReferenceTable reference_table)
+DetailedCompetition::DetailedCompetition(const std::array<StrategyEnum, 3> &strategies, const ReferenceTable &reference_table)
         :
         strategies_(
                 {

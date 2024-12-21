@@ -55,8 +55,8 @@ ReferenceTable Parsers::ParseMatrix(const std::vector<std::string> &arguments) {
     for (const auto & argument : arguments) {
         if (argument.starts_with("--matrix=")) {
 
+
             std::ifstream input_stream(argument.substr(9));
-            input_stream.exceptions(std::ifstream::failbit | std::ifstream::badbit);
 
             ReferenceTable matrix;
 

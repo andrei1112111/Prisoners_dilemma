@@ -8,7 +8,7 @@
 
 class DetailedCompetition final : public Competition {
 public:
-    DetailedCompetition(const std::array<StrategyEnum, 3> &strategies, ReferenceTable reference_table);
+    DetailedCompetition(const std::array<StrategyEnum, 3> &strategies, const ReferenceTable &reference_table);
 
     ~DetailedCompetition() final = default;
 

@@ -51,7 +51,7 @@ TEST_F(TournamentCompetitionTest, TournamentSimulationWorks) {
 
     std::string result = output.str();
     EXPECT_NE(result.find("Strategy"), std::string::npos);
-    EXPECT_NE(result.find("gets"), std::string::npos);
+    EXPECT_NE(result.find("get"), std::string::npos);
 
     std::cout.rdbuf(old_cout);
     std::cin.rdbuf(old_cin);

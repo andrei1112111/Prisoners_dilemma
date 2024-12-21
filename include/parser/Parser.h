@@ -4,7 +4,6 @@
 #include <vector>
 #include <unordered_map>
 #include <string>
-#include <stdexcept>
 #include <fstream>
 
 #include <include/strategies/StrategyFactory.h>
